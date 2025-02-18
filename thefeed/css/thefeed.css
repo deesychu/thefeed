@@ -1,0 +1,201 @@
+body {
+    background-color: #fbfbfb;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    margin: 2em;
+    max-height: 100vh;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/thefeed/img/background2.png);
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    z-index: -1; /* Moves it behind content */
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.right, .left {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.TheFeed {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 55px;
+    width: 92%;
+}
+
+h1 {
+    font-family: "Pinyon Script", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 80px;
+    margin-top: 20px;
+    margin-bottom: -10px;
+}
+
+.Bio, .Intro {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 100px;
+    line-height: 1.5;
+    font-size: 15px;
+}
+
+h2 {
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.right section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+.Clip1, .Clip2, .Clip3, .Clip4, .Clip5, .Clip6, .Clip7, .Clip8, .Clip9, .Clip10, .Clip11, .Clip12, .Clip13, .Clip14 {
+    width: 100%;
+    background-color: #f0f0f0;
+    max-width: 100%;
+    padding: 70px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid #000;
+    border-radius: 1.5px;
+    margin-top: 15px;
+}
+
+#clip-text, #clip-text2, #clip-text3 {
+    width: 50%;
+}
+
+.right video {
+    max-width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-top: 20px;
+    border: 1.5px solid #000;
+}
+
+.right p {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 17px;
+    word-spacing: 5px;
+    display: block;
+    text-align: justify;
+    margin-left: 30px;
+}
+
+.right h2 {
+    font-family: "Pinyon Script", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    display: block;
+}
+
+.Introduction {
+    background-color: #f0f0f0;
+    display: inline-block;
+    width: 450px;
+    border: 1.5px solid #000;
+    text-align: center;
+    border-radius: 1.5px;
+    margin-bottom: 10px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+    padding-right: 15px;
+    width: 100%;
+    padding-left: 5px;
+    scrollbar-width: none;
+}
+
+.left::-webkit-scrollbar {
+    display: none;
+}
+
+.left p {
+    margin-left: 20px;
+    margin-right: 25px;
+}
+
+.logo img {
+    width: 70%;
+    display: block;
+    margin-left: 60px;
+    margin-bottom: -5%;
+    margin-top: -10%;
+    transition: transform 0.1s ease-in-out;
+}
+
+.logo img:hover {
+    transform: scale(1.25);
+}
+
+.left hr {
+    border: none;
+    height: 2px;
+    background-color: black;
+}
+
+.right hr {
+    border: none;
+    height: 1.3px;
+    background-color: black;
+    margin-top: -10px;
+    margin-left: 10%;
+}
+
+.myself img {
+    border: 1.5px solid #000;
+}
+
+.linkedin img {
+    transition: transform 0.1s ease-in-out;
+}
+
+.linkedin img:hover {
+    transform: scale(1.3);
+}
+
+a {
+    font-size: 20px;
+}

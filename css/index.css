@@ -1,0 +1,72 @@
+body {
+    background-color: #fbfbfb;
+    align-items: center;
+    text-align: center;
+    margin: 3.5em;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/background.png);
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+h1 {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic, bold;
+    font-display: center;
+    font-size: 50px;
+    line-height: .95;
+}
+
+.h1, .logo {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+img {
+    margin-bottom: -5%;
+    margin-top: -6%;
+}
+
+.logo img {
+    transition: transform 0.1s ease-in-out;
+}
+
+.logo img:hover {
+    transform: scale(1.25);
+}
+
+.script1, 
+.script2, 
+.script3, 
+.script4 {
+    font-family: "Pinyon Script", serif;
+    font-weight: 400;
+    font-size: 80px;
+    font-style: bold;
+    font-style: normal;
+}
+
+.script4 {
+    line-height: 1.3;
+}
