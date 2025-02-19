@@ -38,9 +38,10 @@ h1 {
     font-family: "Pinyon Script", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 80px;
-    margin-top: 20px;
+    font-size: 45px;
+    margin-top: 5px;
     margin-bottom: -10px;
+    color: black;
 }
 
 .Bio, .Intro {
@@ -48,9 +49,27 @@ h1 {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: italic;
-    margin-bottom: 100px;
-    line-height: 1.5;
-    font-size: 15px;
+}
+
+.Intro-Box {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    width: 100%;
+    height: auto;
+    max-height: 140px;
+    background-color: #f0f0f0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid #000;
+    border-radius: 1.5px;
+}
+
+.profile-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h2 {
@@ -85,10 +104,6 @@ h2 {
     margin-top: 15px;
 }
 
-#clip-text, #clip-text2, #clip-text3 {
-    width: 50%;
-}
-
 .right video {
     max-width: 100%;
     max-width: 300px;
@@ -104,8 +119,15 @@ h2 {
     font-size: 17px;
     word-spacing: 5px;
     display: block;
-    text-align: justify;
     margin-left: 30px;
+}
+
+.Intro-Box p {
+    margin-top: 30px;
+}
+
+.Intro-Box h2 {
+    margin-top: -30px;
 }
 
 .right h2 {
@@ -120,7 +142,7 @@ h2 {
     background-color: #f0f0f0;
     display: inline-block;
     width: 450px;
-    border: 1.5px solid #000;
+    border: 1.5px solid black;
     text-align: center;
     border-radius: 1.5px;
     margin-bottom: 10px;
@@ -141,32 +163,35 @@ h2 {
     scrollbar-width: none;
 }
 
+.profile-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
 .left::-webkit-scrollbar {
     display: none;
 }
 
 .left p {
-    margin-left: 20px;
+    font-size: 15px;
+    margin-left: 10px;
     margin-right: 25px;
+    margin-top: -12px;
+    color: #000;
 }
 
 .logo img {
     width: 70%;
     display: block;
     margin-left: 60px;
-    margin-bottom: -5%;
+    margin-bottom: -10%;
     margin-top: -10%;
     transition: transform 0.1s ease-in-out;
 }
 
 .logo img:hover {
     transform: scale(1.25);
-}
-
-.left hr {
-    border: none;
-    height: 2px;
-    background-color: black;
 }
 
 .right hr {
@@ -177,11 +202,26 @@ h2 {
     margin-left: 10%;
 }
 
+.left hr {
+    border: none;
+    height: 1.3px;
+    margin-top: 10px;
+    background-color: black;
+}
+
 .myself img {
-    border: 1.5px solid #000;
+    width: 140px;
+    height: auto;
+    border-radius: 1.5px;
+    border: 1.5px solid black;
+    margin-left: 25px;
+    margin-top: 10px;
 }
 
 .linkedin img {
+    display: block;
+    margin-top: -5px;
+    margin-left: 60px;
     transition: transform 0.1s ease-in-out;
 }
 
@@ -191,4 +231,35 @@ h2 {
 
 a {
     font-size: 20px;
+}
+
+.top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: black; /* Cream background */
+    color: #f0f0f0; /* Black text */
+    font-family: "Playfair Display", serif;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 1.5px solid #f0f0f0;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
+    animation: fadeInButton 1.5s ease-in-out forwards;
+}
+
+@keyframes fadeInButton {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.top-button:hover {
+    background-color: #f0f0f0;
+    color: black;
+    border: 1.5px solid black;
+}
+
+html {
+    scroll-behavior: smooth;
 }
