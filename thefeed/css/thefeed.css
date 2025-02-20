@@ -30,7 +30,7 @@ body {
 .TheFeed {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 55px;
+    column-gap: 35px;
     width: 92%;
 }
 
@@ -95,7 +95,7 @@ h2 {
     width: 100%;
     background-color: #f0f0f0;
     max-width: 100%;
-    padding: 70px;
+    padding: 0px;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -134,8 +134,24 @@ h2 {
     font-family: "Pinyon Script", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 50px;
+    font-size: 40px;
     display: block;
+}
+
+.right h3 {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic, bold;
+    font-size: 35px;
+}
+
+.script {
+    font-family: "Pinyon Script", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+    word-spacing: 5px;
 }
 
 .Introduction {
@@ -157,9 +173,9 @@ h2 {
     top: 0;
     height: 100vh;
     overflow-y: auto;
-    padding-right: 15px;
+    padding-right: -50px;
     width: 100%;
-    padding-left: 5px;
+    padding-left: -15px;
     scrollbar-width: none;
 }
 
