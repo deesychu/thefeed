@@ -14,16 +14,6 @@ body {
     object-fit: cover;
     opacity: 0;
     z-index: -1;
-    animation: fadeIn 1s ease-in-out forwards;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
 }
 
 h1 {
@@ -32,7 +22,7 @@ h1 {
     font-weight: 400;
     font-style: italic, bold;
     font-display: center;
-    font-size: 50px;
+    font-size: 35px;
     line-height: .95;
 }
 
@@ -44,6 +34,7 @@ h1 {
 img {
     margin-bottom: -5%;
     margin-top: -6%;
+    width: 35%;
 }
 
 .logo img {
@@ -60,7 +51,7 @@ img {
 .script4 {
     font-family: "Pinyon Script", serif;
     font-weight: 400;
-    font-size: 80px;
+    font-size: 65px;
     font-style: bold;
     font-style: normal;
 }
